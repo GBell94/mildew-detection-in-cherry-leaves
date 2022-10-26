@@ -1,5 +1,5 @@
 ## Dataset Content
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We created then a fictitious user story where predictive analytics can be applied in a real project in the workplace.
+* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 * The dataset contains +4 thousand images taken from client's crop fields. The images show cherry leaves that are healthy and cherry leaves that contain powdery mildew, which is a fungal disease that affects a wide range of plants. The cherry plantation crop is one of their finest products in the portfolio and the company is concerned about supplying the market with a product of compromised quality.
 
 
@@ -15,11 +15,19 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision to validate it (them).
+1 - Cherry leaves with powdery mildew display clear markings/signs of the disease to differentiate them from healthy leaves.
+* Validate by comparing the 'mean' images of healthy and mildew-infected leaves.
 
 
 ## Rationale to map the business requirements to the Data Visualizations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualizations and ML tasks.
+Business requirement 1: Data Visualization
+* The client wants to display the 'mean' and 'standard deviation' images for cherry leaves that are healthy and those that have powdery mildew in order to visually differentiate them.
+* The client wants to display the difference between the 'mean' image for a healthy cherry leaf and the 'mean' images of one that has mildew in order to visually differentiate them.
+* The client wants to display an image montage of healthy cherry leaves and those which have powdery mildew in order to visually differentiate them.
+
+Business requirement 2: Classification
+* The client wants to be able to predict if a given cherry leaf is healthy or has been infected with powdery mildew.
+* The client wants to build a binary classification ML model and generate reports.
 
 
 ## ML Business Case
@@ -66,8 +74,3 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 - The photos used on the home and sign up page are from This Open Source site
 - The images used for the gallery page were taken from this other open source site
-
-
-
-## Acknowledgements (optional)
-* In case you would like to thank the people that provided support through this project.
