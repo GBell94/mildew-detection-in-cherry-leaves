@@ -31,7 +31,13 @@ Business requirement 2: Classification
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualized a ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+* We want an ML model to predict if a cherry leaf is healthy or has powdery mildew. It is a supervised, two-class, single-label classification model.
+* Our ideal outcome is to provide Farmy & Foods with a faster, easier and more accurate way of predicting whether a cherry tree has been infected with powdery mildew which is scalable across their farms.
+* The model success metrics are: accuracy of 97% or higher on the test set.
+* The model output is a statement indicating whether a cherry leaf is healthy or has powdery mildew, together with the associated probability of being healthy or not. Employees will take images of the leaves and upload them to the app.
+* Heuristics: Currently, Farmy & Foods use a manual process to verify if a cherry tree is affected by powdery mildew. An employee is required to take samples of leaves from each tree and visual criteria are used to decide if the tree is healthy or not. This process is open to human error, leading to inaccurate designation of a tree as healthy/infected. In addition, the employee typically needs to spend 30 minutes in each tree for this task, which is not scalable given the number of trees and different locations. 
+* The training data is a set of over 4000 cherry tree leaf images supplied by Farmy & Foods and stored in a [Kaggle dataset directory](https://www.kaggle.com/codeinstitute/cherry-leaves).
+    * Train data: target - healthy or not; features - all images in dataset.
 
 
 ## Dashboard Design
