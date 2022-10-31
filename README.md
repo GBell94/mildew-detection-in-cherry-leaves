@@ -22,7 +22,7 @@ To save time in this process, the IT team suggested an ML system that is capable
 ## Rationale to map the business requirements to the Data Visualizations and ML tasks
 Business requirement 1: Data Visualization
 * The client wants to display the 'mean' and 'standard deviation' images for cherry leaves that are healthy and those that have powdery mildew in order to visually differentiate them.
-* The client wants to display the difference between the 'mean' image for a healthy cherry leaf and the 'mean' images of one that has mildew in order to visually differentiate them.
+* The client wants to display the difference between the 'mean' image for a healthy cherry leaf and the 'mean' image of a leaf that has mildew in order to visually differentiate them.
 * The client wants to display an image montage of healthy cherry leaves and those which have powdery mildew in order to visually differentiate them.
 
 Business requirement 2: Classification
@@ -41,6 +41,41 @@ Business requirement 2: Classification
 
 
 ## Dashboard Design
+### Page 1 - Project Summary
+
+* General Information
+    * Powdery mildew is a fungal disease affecting a wide range of plants. 
+    * Samples of leaves are taken and inspected visually for signs of mildew. 
+* Project Dataset
+    * The available dataset contains over 4000 images of cherry leaves which are healthy and ones which show signs of powdery mildew taken from Farmy & Foods' crops.
+* Business Requirements
+    * The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy and that contains powdery mildew.
+    * The client is interested to predict if a cherry leaf is healthy or contains powdery mildew.    
+
+### Page 2 - Leaf Visualizer
+* Business requirement 1: The client wants to be able to predict if a given cherry leaf is healthy or has been infected with powdery mildew.
+    * Checkbox - Average and variability images of healthy and powdery mildew cherry leaves
+    * Checkbox - Differences between average healthy and average powdery mildew cherry leaves
+    * Checkbox - Image montage for healthy and powdery mildew cherry leaves
+    
+### Page 3 - Mildew Detector
+* Business requirement 2: The client would like to predict whether a given cherry leaf is healthy or has powdery mildew.
+    * Link to download a set of cherry leaf images for live prediction.
+    * User interface with a file uploader widget. The user should upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew, together with the probability associated with the statement. 
+    * A table with the image name and image prediction results.
+    * A download button to download the table. 
+
+### Page 4 - Project Hypothesis
+* A block with a statement of the project hypothesis, the conclusion and how this was validated.
+
+### Page 5 - ML Performance Metrics
+* Bar charts of label frequencies for the Train, Validation and Test sets.
+* Model history - line plots of the accuracy and loss.
+* Model evaluation results - table showing the Test set performance. 
+
+
+
+
 * List all dashboard pages and its content, either block of information or widgets, like: buttons, checkbox, image, or any other item that your dashboard library supports.
 * Eventually, during the project development, you may revisit your dashboard plan to update a give feature (for example, in the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type).
 
@@ -67,8 +102,10 @@ Business requirement 2: Classification
 
 ## Credits 
 
-* In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* The project was built using the Code Institute pre-prepared template.
+* The app style and code are adapted from the Code Institute walkthrough project for the Malaria Detector.
+* Additional code has been adapted from the Predictive Analytics course materials: Image Analysis and TensorFlow.
+
 
 ### Content 
 
