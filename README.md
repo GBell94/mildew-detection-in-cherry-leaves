@@ -47,7 +47,7 @@ Business requirement 2: Classification
     * Powdery mildew is a fungal disease affecting a wide range of plants. 
     * Samples of leaves are taken and inspected visually for signs of mildew. 
 * Project Dataset
-    * The available dataset contains over 4000 images of cherry leaves which are healthy and ones which show signs of powdery mildew taken from Farmy & Foods' crops.
+    * The available dataset contains 4208 images of cherry leaves which are healthy and ones which show signs of powdery mildew taken from Farmy & Foods' crops.
 * Business Requirements
     * The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy and that contains powdery mildew.
     * The client is interested to predict if a cherry leaf is healthy or contains powdery mildew.    
@@ -72,12 +72,6 @@ Business requirement 2: Classification
 * Bar charts of label frequencies for the Train, Validation and Test sets.
 * Model history - line plots of the accuracy and loss.
 * Model evaluation results - table showing the Test set performance. 
-
-
-
-
-* List all dashboard pages and its content, either block of information or widgets, like: buttons, checkbox, image, or any other item that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a give feature (for example, in the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type).
 
 
 ## Unfixed Bugs
